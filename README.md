@@ -12,6 +12,7 @@ s3:
     - "9000:9000"
   volumes:
     - s3:/storage
+  command: -r /storage -p 9000 -H s3
 
 some other services ...
 
@@ -19,7 +20,7 @@ volumes:
     s3:
 ```
 
-Run throw docker:   
+Run as standalone:   
 `docker run --name s3 -p 9000:9000 -v "$(pwd)"/volume:/storage -d vladnev/fake-s3`
 
 Aws default connection config:

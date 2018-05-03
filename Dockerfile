@@ -5,4 +5,4 @@ RUN gem install fakes3 -v 0.2.5
 RUN mkdir /storage
 
 ENTRYPOINT ["fakes3"]
-CMD ["-r",  "/storage", "-p",  "9000"]
+CMD ["-r",  "/storage", "-p",  "9000", "-H", "localhost"]
