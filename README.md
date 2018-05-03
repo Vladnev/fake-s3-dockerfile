@@ -1,7 +1,7 @@
 # fake-s3-dockerfile
 
 Docerized fake AWS S3 server for local development.
-See: [fake-s3](https://github.com/jubos/fake-s3).(version 0.2.4)
+See: [fake-s3](https://github.com/jubos/fake-s3).(version 0.2.5)
 
 Usage (in docker-compose.yml):
 
